@@ -100,7 +100,7 @@ main {
     flex-direction: column;
     align-items: flex-start; 
     justify-content: center; 
-
+    
     min-height: 100vh;
     margin: 0; 
 }
@@ -109,9 +109,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh; 
     width: 100vw;
-    padding: 0 5rem;
+    padding: 5rem 5rem;
 }
 
 ul {
@@ -129,20 +128,19 @@ ul {
 .vertical {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 2rem;
 }
 
 /* --- LANDING SECTION --- */
 #landing {
+    height: 100vh;
     background-color: black;
     color: white;
 }
 
 /* --- PROJECTS SECTION --- */
 .view-proj {
-    
     font-size: 1.5rem;
     font: var(--font-body);
 }
@@ -153,13 +151,12 @@ ul {
     color: white;
 }
 
-#experience .horizontal, 
-#about .horizontal {
-    display: flex; /* Makes children sit side-by-side */
+#experience .horizontal {
+    display: flex; 
     flex-direction: row; 
-    align-items: baseline; /* Aligns text based on the bottom line of the text */
-    justify-content: space-between; /* Keeps them aligned to the left */
-    gap: 1.5rem; /* Space between the title and the date */
+    align-items: baseline; 
+    justify-content: space-between; 
+    gap: 1.5rem; 
 }
 
 time {
@@ -173,13 +170,13 @@ time {
     width: 100%;
 }
 
-#skills-list, #contact-list {
+#skills-list {
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    padding: 0;
+    padding: 0 5rem;
     margin: 0;
     width: 100%;
 }
@@ -204,6 +201,19 @@ time {
     color: white;
 }
 
+#about div {
+    display: flex; 
+    gap: 2rem; 
+}
+
+#about .horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
 iframe {
     height: 90vh;
     width: 90vw;
@@ -212,6 +222,17 @@ iframe {
 /* --- CONTACT SECTION --- */
 #contact a {
     color: black
+}
+
+#contact-list {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 0 5rem;
+    margin: auto;
+    width: 100%;
 }
 
 #contact ul, form {

@@ -8,7 +8,42 @@
         <link rel="stylesheet" href="fonts/Poppins/poppins.css">
         <link rel="stylesheet" href="fonts/Raleway/raleway.css">
         <style>
-            @media (min-width: 768px) and (max-width: 991px) {
+            @media (max-width: 600px) {
+                h1 { font-size: 1.75rem; }
+                h2 { font-size: 1.5rem; }
+                h3 { font-size: 1.25rem; }
+                h4, nav a, a, p, time, li { font-size: 1rem;}
+
+                nav ul {
+                    padding: 0.5rem 2rem;
+                }
+
+                section {
+                    height: auto;
+                    width: 100vw;
+                    padding: 2rem;
+                }
+
+                #skills-list {
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                }
+
+                .skill-logo, .contact-logo {
+                    width: 3rem;
+                    height: 3rem;
+                }
+
+                iframe {
+                    width: 80vw;
+                    height: 70vh;
+                }
+            }
+
+            @media (max-width: 992px) {
                 h1 { font-size: 2.5rem; }
                 h2 { font-size: 2rem; }
                 h3 { font-size: 1.5rem; }
@@ -40,42 +75,7 @@
 
                 iframe {
                     width: 88vw;
-                    height: 80vh;
-                }
-            }
-
-            @media (min-width: 600px) and (max-width: 767px) {
-                h1 { font-size: 2rem; }
-                h2 { font-size: 1.5rem; }
-                h3 { font-size: 1.25rem; }
-                h4, nav a, a, p, time, li { font-size: 1rem;}
-
-                nav ul {
-                    padding: 0.5rem 2rem;
-                }
-
-                section {
-                    height: auto;
-                    width: 100vw;
-                    padding: 2rem;
-                }
-
-                #skills-list, #contact-list {
-                    grid-template-columns: 1fr 1fr;
-                    gap: 2rem;
-                    padding: 0;
-                    margin: 0;
-                    width: 100%;
-                }
-
-                .skill-logo, .contact-logo {
-                    width: 4rem;
-                    height: 4rem;
-                }
-
-                iframe {
-                    width: 90vw;
-                    height: 80vh;
+                    height: 60vh;
                 }
             }
         </style>
@@ -109,16 +109,16 @@
 
             <section id="projects">                
                 <h2>Projects</h2>
-                <div class="horiztonal">
-                    <picture>
-                        <source srcset="images/kiosk-l.png" media="(min-width: 992px)">
+                <div class="horizontal">
+                <picture>
+                    <source srcset="images/kiosk-l.png" media="(min-width: 992px)" width="600" height="400">
 
-                        <source srcset="images/kiosk-m.png" media="(min-width: 768px)">
+                    <source srcset="images/kiosk-m.png" media="(max-width: 768px)" width="400" height="300">
 
-                        <source srcset="images/kiosk-s.png" media="(min-width: 600px)">
-
-                        <img src="images/kiosk-s.png" alt="Matcha Maiko Self-Kiosk start screen with an image of a Maiko Special Parfait.">
-                    </picture>
+                    <source srcset="images/kiosk-s.png" media="(max-width: 600px)" width="300" height="200">
+                    
+                    <img src="images/kiosk-s.png" alt="Matcha Maiko Self-Kiosk start screen with an image of a Maiko Special Parfait.">
+                </picture>
                     <div class="vertical">
                         <p>
                             Redesigned a self-service kiosk interface for a Matcha Maiko to enhance user 
@@ -184,13 +184,16 @@
                 <h2>About Me</h2>
                 <div>
                     <img src="images/me.jpg" alt="Picture of Angeleen">
-                    <p>I am a 4th year at UC San Diego with a passion 
-                        in human-computer interaction and computer science. I'm 
-                        really passionate about designing <em>accesible</em> products for users,
-                        especially within the medical field. </p> 
-                    <p> If you'd like to chat, send 
-                        me a message on my <a href="contact.html">Contact</a> page!
-                    </p>
+                    <div class="vertical">
+                        <p>I am a 4th year at UC San Diego with a passion 
+                            in human-computer interaction and computer science. I'm 
+                            really passionate about designing <em>accesible</em> products for users,
+                            especially within the medical field. 
+                        </p> 
+                        <p> If you'd like to chat, send 
+                            me a message on my <a href="contact.html">Contact</a> page!
+                        </p>
+                    </div>
                 </div>
                 
                 <article>
@@ -215,23 +218,17 @@
                  <ul id="contact-list">
                     <li class="contact-item">
                         <img src="images/gmail.svg" alt="Gmail logo" class="contact-logo">
-                        <h3>Email</h3>
-                        <a href="mailto:angeleenduong@gmail.com">
-                            
-                            <span>angeleenduong@gmail.com</span>
-                        </a>
+                        <a href="mailto:angeleenduong@gmail.com">Email</a>
                     </li>
 
                     <li class="contact-item">
                         <img src="images/github.svg" alt="GitHub logo" class="contact-logo">
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/angeleend">https://github.com/angeleend</a>
+                        <a href="https://github.com/angeleend">GitHub</a>
                     </li>
 
                     <li class="contact-item">
                         <img src="images/linkedin.svg" alt="LinkedIn logo" class="contact-logo">
-                        <h3>LinkedIn</h3>
-                        <a href="https://linkedin.com/in/angeleen-duong">https://linkedin.com/in/angeleen-duong</a>
+                        <a href="https://linkedin.com/in/angeleen-duong">LinkedIn</a>
                     </li>
                 </ul>
         
