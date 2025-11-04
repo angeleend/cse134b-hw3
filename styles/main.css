@@ -1,5 +1,5 @@
 :root {
-    --font-heading: 'Poppins', 'Inter', 'Avenir Next', Helvetica Neue, Arial, sans-serif;
+    --font-heading: 'Archivo Narrow', 'Inter', 'Avenir Next', Helvetica Neue, Arial, sans-serif;
     --font-body: 'General Sans', 'Inter', 'Gill Sans', 'Open Sans', Verdana, sans-serif;
     --seashell: #f8f7ed;
     --black: #121113;
@@ -88,6 +88,10 @@ header {
     nav {
         width: 100%; 
         margin: 0; 
+
+        & #menu-toggle, & label {
+            display: none; 
+        }
 
         & a {
             text-decoration: none;
